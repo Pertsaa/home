@@ -1,7 +1,8 @@
-bin/
-tmp/
+/bin/
+/tmp/
 
 .env
 .DS_Store
 
+/static/css/styles.css
 tailwindcss
