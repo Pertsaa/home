@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Perttu Autti | Software Developer</title>
+
+    <meta name="description"
+        content="Perttu Autti is a full-stack developer from Finland. His main expertise is in writing full-stack web applications using Svelte, React, NodeJS, and Go.">
+
+    <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+
+<body class="h-full bg-neutral-900">
+    <div class="h-full bg-neutral-900 bg-cover bg-center"
+        style="background-image: url(&quot;/static/webp/me.webp&quot;)">
+        <a href="https://github.com/Pertsaa" target="_blank" class="top-4 right-4 fixed">
+            <img class="h-8" src="/static/svg/github.svg" alt="GitHub Logo" width="32px" height="32px" />
+        </a>
+        <div class="flex h-full flex-col items-center justify-center">
+            <h1 class="text-5xl font-bold text-neutral-100">
+                Perttu Autti
+            </h1>
+            <p class="text-neutral-100">Full-stack developer</p>
+
+            <a href="/static/pdf/cv.pdf"
+                class="mt-4 bg-primary-500 text-neutral-400 px-4 py-2 rounded-md hover:text-neutral-300">Download CV</a>
+        </div>
+    </div>
+    <section class="bg-black">
+        <div class="flex flex-col mx-auto max-w-4xl px-8 pt-12">
+            <div class="bg-black py-24 sm:py-32">
+                <div class="mx-auto max-w-7xl sm:px-6 sm:text-center lg:px-8">
+                    <div class="mx-auto max-w-2xl">
+                        <h2 class="text-3xl font-bold tracking-tight text-neutral-100 sm:text-4xl">Hello!</h2>
+                        <p class="text-lg mt-10 leading-8 text-neutral-100">
+                            “Amet amet eget scelerisque tellus sit neque
+                            faucibus non eleifend. Integer eu praesent at a.
+                            Ornare arcu gravida natoque erat et cursus
+                            tortor consequat at. Vulputate gravida sociis
+                            enim nullam ultricies habitant malesuada lorem
+                            ac. Tincidunt urna dui pellentesque sagittis.”
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-black">
+        <div class="mx-auto max-w-max flex gap-2 items-center px-8 pt-12" width="32px" height="32px">
+            <img class="h-8" src="/static/svg/typescript.svg" alt="TypeScript Logo" width="32px" height="32px" />
+            <img class="h-8" src="/static/svg/javascript.svg" alt="JavaScript Logo" width="32px" height="32px" />
+            <img class="h-12" src="/static/svg/go.svg" alt="Go Logo" width="48px" height="48px" />
+            <img class="h-8" src="/static/svg/svelte.svg" alt="Svelte Logo" width="32px" height="32px" />
+            <img class="h-8" src="/static/svg/react.svg" alt="React Logo" width="32px" height="32px" />
+            <img class="h-8" src="/static/svg/html.svg" alt="HTML Logo" width="32px" height="32px" />
+            <img class="h-8" src="/static/svg/css.svg" alt="CSS Logo" width="32px" height="32px" />
+            <img class="h-8" src="/static/svg/tailwind.svg" alt="Tailwind Logo" width="32px" height="32px" />
+        </div>
+    </section>
+    <section class="bg-black">
+        <div class="flex flex-col mx-auto max-w-4xl px-8 py-12">
+            <div class="bg-black py-24 sm:py-32">
+                <div class="mx-auto max-w-7xl sm:px-6 sm:text-center lg:px-8">
+                    <div class="mx-auto max-w-2xl">
+                        <h2 class="text-3xl font-bold tracking-tight text-neutral-100 sm:text-4xl">Projects</h2>
+                        <p class="mt-4 text-lg leading-8 text-neutral-400">Here are some of my favourite projects I have
+                            been
+                            working on recently.</p>
+                    </div>
+                    <ul role="list"
+                        class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
+                        {{ range . }}
+                        <li
+                            class="rounded-2xl bg-neutral-900 hover:bg-neutral-800 cursor-pointer transition-colors duration-300 px-8 py-10">
+                            <a href="{{ .Link }}">
+                                <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-neutral-100">{{
+                                    .Title
+                                    }}
+                                </h3>
+                                <p class="text-sm leading-6 text-neutral-400">{{ .Description }}</p>
+                                <ul role="list" class="mt-6 flex justify-center gap-x-6">
+                                    <li>
+                                        <div class="text-neutral-400 hover:text-neutral-300">
+                                            <span class="sr-only">X</span>
+                                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                aria-hidden="true">
+                                                <path
+                                                    d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="text-neutral-400 hover:text-neutral-300">
+                                            <span class="sr-only">LinkedIn</span>
+                                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                aria-hidden="true">
+                                                <path fill-rule="evenodd"
+                                                    d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </a>
+
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
